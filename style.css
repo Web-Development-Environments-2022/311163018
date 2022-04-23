@@ -1,7 +1,633 @@
-#menu
-{
-	position: fixed;
-	width: 100%;
-	height: 35px;
-	background: white;
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: visible;
+background-color: #2d545e;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+width: 100%;
+border-left: 5px #12343b;
+transition: border-width 0.4s;
+opacity: 1;
+z-index: 999;
+border-radius: 15px 50px 30px;
 }
+
+ul_down_right {
+    list-style-type: none;
+    overflow: visible;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    /* left: 95vw; */
+    opacity: 1;
+    margin-bottom: 2vh;
+    margin-right: 1vw;
+}
+
+ul_down_left {
+    list-style-type: none;
+    overflow: visible;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    /* left: 95vw; */
+    opacity: 0.6;
+    margin-bottom: 2vh;
+    margin-left: 1vw;
+    
+}
+
+li {
+float: left;
+border-right: 1px solid #2d545e;
+background-color: #12343b;
+}
+
+li a {
+display: block;
+color: #e1b382;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+background-color: #2d545e;
+border-right: 1px solid #e1b382;
+font-size: 180%;
+-webkit-text-stroke: 0.4px #e1b382;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+background-color: #12343b;
+transform: scale(1.1);
+}
+.active {
+background-color: #12343b;
+}
+
+
+li:last-child {
+border-right: none;
+background-attachment: fixed;
+}
+h1 {
+    width: 99%;
+    background-color: #2d545e;
+    color: #e1b382;
+	font-size: 250%;
+	text-align: center;
+	border: #e1b382;
+	border-width: 10px;
+    -webkit-text-stroke: 0.8px #c89666;
+    border-left: 5px #c89666 solid;
+    transition: border-width 0.4s;
+    border-radius: 15px 50px 30px;
+    
+}
+h1:hover {
+    border-width: 15px;
+
+}
+
+h2 {
+    width: 99%;
+    /* background-color: #e1b382; */
+    color: #2d545e;
+	font-size: 300%;
+    font-display: swap;
+	text-align: center;
+	border: #ffffff;
+	border-width: 10px;
+    font-weight: bold;
+    font-style: italic;
+    overflow: hidden;
+
+}
+
+h3 {
+    width: 100%;
+    /* background-color: #c89666; */
+    color: #2d545e;
+	font-size: 100%;
+	text-align: center;
+	border: #e1b382;
+	border-width: 10px;
+}
+section{
+    /* background-color:#e1b382; */
+	float: left;
+	width:100%;
+	height:100%;
+    /* background-image: url("img7.jpg");
+    background-repeat: no-repeat; Do not repeat the image
+    background-size: cover;  */
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+.responsive {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 32.5vw;
+    height: auto;
+    transition: transform .2s;
+}
+.responsive:hover{
+    transform: scale(1.5);
+}
+.avatar {
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    transition: transform .2s;
+    overflow: visible;
+}
+.avatar:hover{
+    transform: scale(1.8);
+    /* HOW TO ZOON ON HOVER
+    https://www.w3schools.com/howto/howto_css_zoom_hover.asp
+    */
+}
+.avatar_scroll {
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: transform .5s;
+    overflow: visible;
+    opacity: 0.3;
+}
+.avatar_scroll:hover {
+    transform: scale(1.8);
+    opacity: 1;
+}
+.avatar_text {
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: transform .2s;
+    overflow: hidden;
+    opacity: 0.95;
+}
+.avatar_text:hover{
+    transform: scale(2.5);
+    opacity: 1;
+    border-radius: 5%
+    
+    /* HOW TO ZOON ON HOVER
+    https://www.w3schools.com/howto/howto_css_zoom_hover.asp
+    */
+    
+}
+.avatar_hobby {
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+    transition: transform .2s;
+    overflow: hidden;
+}
+.avatar_hobby:hover{
+    transform: scale(2.5);
+    border-radius: 5%
+    /* HOW TO ZOON ON HOVER
+    https://www.w3schools.com/howto/howto_css_zoom_hover.asp
+    */
+}
+.avatar_header {
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 15%;
+    transition: transform .2s;
+}
+.avatar_header:hover{
+    transform: scale(2.0);
+    border-radius: 50%
+    /* HOW TO ZOON ON HOVER
+    https://www.w3schools.com/howto/howto_css_zoom_hover.asp
+    */
+}
+.QR {
+    width: 15vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 2vh;
+    max-width: auto;
+    height: 15vh;
+    transition: transform .2s;
+    
+}
+.QR:hover{
+    transform: scale(1.5);
+}
+h4 {
+    display: block;
+    width: auto;
+    background-color: #2d545e;
+    color: #e1b382;
+    font-size: 250%;
+    text-align: center;
+    text-decoration: solid;
+    -webkit-text-stroke: 0.8px #c89666;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+body {
+    background-image: url("wallpaper.jpg");
+    background-color: #f5d9bc;
+  }
+  /* Sand Tan: #e1b382
+
+Sand Tan Shadow: #c89666
+
+Night Blue: #2d545e
+
+Night Blue Shadow: #12343b 
+
+https://hookagency.com/blog/website-color-schemes-2020/
+*/
+
+/* https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4px;
+    
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    transition: transform .2s;
+  }
+  .column img:hover{
+    transform: scale(1.5);
+    overflow: hidden;
+
+}
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .container { 
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .vertical-center {
+    margin-left: 42%;
+    margin-top: 15%;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    overflow: hidden;
+    opacity: 0.9;
+  }
+  .vertical-center:hover {
+    opacity: 1;
+  }
+  table, th, td {
+    border:1px solid black;
+    margin-left: 10%;
+    font-size: 150%;
+    border-spacing: 5px ;
+  }
+  th, td {
+    padding: 15px;
+  }
+  
+
+  /* input type text */
+  input[type=text], select {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #2d545e;
+    font-size: 25%;
+    border-radius: 15px 50px 30px;
+  }
+
+  /* input type submit and reset */
+  input[type=submit],input[type=reset] {
+  width: 75%;
+  background-color: #2d545e;
+  color: #e1b382;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 50%;
+}
+
+input[type=submit]:hover ,input[type=reset]:hover , .button:hover{
+  background-color: #12343b;
+  font-size: 55%;
+}
+
+.button {
+    width: 75%;
+    background-color: #2d545e;
+    border: none;
+    color: #e1b382;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50%;
+    margin: 8px 0;
+    cursor: pointer;
+    border-radius: 15px 50px 30px;
+  }
+
+
+    /* cubes */
+
+
+.cube-container {
+	width: 100px;
+	height: 100px;
+	perspective: 800px;
+	margin: auto;
+    display: inline-block;
+    opacity: 0.9;
+}
+.cube-container:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    /* -webkit-animation: 15s linear rotate infinite;
+    -moz-animation: 15s linear rotate infinite; */
+    -webkit-animation: 15s linear rotate infinite;
+    animation: 15s linear rotate infinite;
+    transform: translateZ(-100px);
+    display: inline-block;
+
+    
+
+}
+
+.cube__face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 5%;
+    opacity: 0.9;
+}
+.cube__face:hover {
+    opacity: 1;
+}
+
+.front  { background-image: url("photos\\s1.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.back  { background-image: url("photos\\s2.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.left  { background-image: url("photos\\s3.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.right  { background-image: url("photos\\s4.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.top  { background-image: url("photos\\s5.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.bottom  { background-image: url("photos\\s6.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.front  { transform: rotateY(  0deg) translateZ(50px); }
+.back   { transform: rotateY(180deg) translateZ(50px); }
+.left   { transform: rotateY(-90deg) translateZ(50px); }
+.right  { transform: rotateY( 90deg) translateZ(50px); }
+.top    { transform: rotateX( 90deg) translateZ(50px); }
+.bottom { transform: rotateX(-90deg) translateZ(50px); }
+.cube { transform: translateZ(-100px); }
+/* 1 */
+.front1  { background-image: url("photos\\s2.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.back1  { background-image: url("photos\\s3.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.left1  { background-image: url("photos\\s4.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.right1  { background-image: url("photos\\s5.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.top1  { background-image: url("photos\\s6.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.bottom1  { background-image: url("photos\\s7.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.front1  { transform: rotateY(  0deg) translateZ(50px); }
+.back1   { transform: rotateY(180deg) translateZ(50px); }
+.left1   { transform: rotateY(-90deg) translateZ(50px); }
+.right1  { transform: rotateY( 90deg) translateZ(50px); }
+.top1    { transform: rotateX( 90deg) translateZ(50px); }
+.bottom1 { transform: rotateX(-90deg) translateZ(50px); }
+
+/* 2 */
+.front2  { background-image: url("photos\\s3.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.back2  { background-image: url("photos\\s4.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.left2  { background-image: url("photos\\s5.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.right2  { background-image: url("photos\\s6.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.top2  { background-image: url("photos\\s7.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.bottom2  { background-image: url("photos\\s1.jpeg");
+    background-position: center;
+    background-size: cover; }
+
+.front2  { transform: rotateY(  0deg) translateZ(50px); }
+.back2   { transform: rotateY(180deg) translateZ(50px); }
+.left2   { transform: rotateY(-90deg) translateZ(50px); }
+.right2  { transform: rotateY( 90deg) translateZ(50px); }
+.top2    { transform: rotateX( 90deg) translateZ(50px); }
+.bottom2 { transform: rotateX(-90deg) translateZ(50px); }
+
+@-webkit-keyframes rotate {
+    0%,
+    5% {
+        -webkit-transform: translateZ(-150px) rotateY(   0deg);
+        transform: translateZ(-150px) rotateY(   0deg);
+    }
+    10%,
+    20% {
+        -webkit-transform: translateZ(-150px) rotateY( 180deg);
+        transform: translateZ(-150px) rotateY( 180deg);
+    }
+    25%,
+    35% {
+        -webkit-transform: translateZ(-150px) rotateY(270deg);
+        transform: translateZ(-150px) rotateY(270deg);
+    }
+    40%,
+    50% {
+        -webkit-transform: translateZ(-150px) rotateY(  90deg);
+        transform: translateZ(-150px) rotateY(  90deg);
+    }
+    55%,
+    65% {
+        -webkit-transform: translateZ(-150px) rotateX( -90deg);
+        transform: translateZ(-150px) rotateX( -90deg);
+    }
+    70%,
+    80% {
+        -webkit-transform: translateZ(-150px) rotateX(  90deg);
+        transform: translateZ(-150px) rotateX(  90deg);
+    }
+    95%,
+    100% {
+        -webkit-transform: translateZ(-150px) rotateY(   0deg);
+        transform: translateZ(-150px) rotateY(   0deg);
+    }
+}
+
+@keyframes rotate {
+    0%,
+    5% {
+        -webkit-transform: translateZ(-150px) rotateY(   0deg);
+        transform: translateZ(-150px) rotateY(   0deg);
+    }
+    10%,
+    20% {
+        -webkit-transform: translateZ(-150px) rotateY( 180deg);
+        transform: translateZ(-150px) rotateY( 180deg);
+    }
+    25%,
+    35% {
+        -webkit-transform: translateZ(-150px) rotateY(270deg);
+        transform: translateZ(-150px) rotateY(270deg);
+    }
+    40%,
+    50% {
+        -webkit-transform: translateZ(-150px) rotateY(  90deg);
+        transform: translateZ(-150px) rotateY(  90deg);
+    }
+    55%,
+    65% {
+        -webkit-transform: translateZ(-150px) rotateX( -90deg);
+        transform: translateZ(-150px) rotateX( -90deg);
+    }
+    70%,
+    80% {
+        -webkit-transform: translateZ(-150px) rotateX(  90deg);
+        transform: translateZ(-150px) rotateX(  90deg);
+    }
+    95%,
+    100% {
+        -webkit-transform: translateZ(-150px) rotateY(   0deg);
+        transform: translateZ(-150px) rotateY(   0deg);
+    }
+}
+
+.fly_face {
+    width: 150px;
+    height: 150px;
+    margin-left: 10vw;
+    background-image: url("photos\\face.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 20%;
+    opacity: 0.9;
+  }
+
+  @keyframes example {
+    0%   {background-image: url("photos\\beach.jpg");background-position: center; background-size: cover; left:0px; top:0px;}
+    25%  {background-image: url("photos\\ball.jpg");background-position: center; background-size: cover; left:40vw; top:0px;}
+    50%  {background-image: url("photos\\play.jpg"); background-position: center; background-size: cover; left:0px; top:0px;right: 40vw;}
+    75%  {background-image: url("photos\\s1.jpeg"); background-position: center; background-size: cover; left:40vw; top:0px;}
+    100% {background-image: url("photos\\sweetie.jpg"); background-position: center; background-size: cover; left:0px; top:0px; right: 40vw;}
+  }
+  .fly_face:hover {
+    width: 150px;
+    height: 150px;
+    animation-play-state:paused;
+    border-radius: 20%;
+    transform: scale(1.2);
+    opacity: 1;
+
+  }
+
+
+  
