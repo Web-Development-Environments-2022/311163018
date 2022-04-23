@@ -229,10 +229,12 @@ section{
     max-width: auto;
     height: 15vh;
     transition: transform .2s;
+    z-index: 999;
     
 }
 .QR:hover{
     transform: scale(1.5);
+    z-index: 999;
 }
 h4 {
     display: block;
